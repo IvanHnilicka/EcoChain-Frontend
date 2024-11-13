@@ -1,0 +1,56 @@
+<div class="content">
+  <div class="form">
+    <h1>Buscar Usuario</h1>
+
+    <div class="form-field">
+      <label for="direccion-input">Direccion:</label>
+      <input
+        id="direccion-input"
+        type="text"
+        placeholder="Ingrese direccion del usuario"
+        autocomplete="off"
+      />
+    </div>
+
+    <button class="registro-btn" (click)="cargarDatos()">Buscar</button>
+
+    <div class="datos-container">
+      <div class="form-field">
+        <label for="nombre-input">Nombre:</label>
+        <input
+          id="nombre-input"
+          type="text"
+          placeholder="Nombre del usuario"
+          autocomplete="off"
+          readonly
+          disabled
+          value="{{datosUsuario.nombre}}"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="facultad-input">Facultad</label>
+        <input
+          id="facultad-input"
+          type="text"
+          placeholder="Facultad del usuario"
+          autocomplete="off"
+          disabled
+          value="{{datosUsuario.facultad}}"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="puntos-input">Puntos:</label>
+        <input
+          id="puntos-input"
+          type="number"
+          placeholder="Total de puntos acumulados"
+          autocomplete="off"
+          disabled
+          value="{{datosUsuario.puntos}}"
+        />
+      </div>
+    </div>
+  </div>
+</div>

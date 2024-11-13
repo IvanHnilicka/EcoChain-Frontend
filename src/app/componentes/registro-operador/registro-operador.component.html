@@ -1,0 +1,39 @@
+<div class="content">
+  <form class="form" [formGroup]="registroOperadorForm">
+    <h1>Registrar Operador</h1>
+
+    <div class="form-field">
+      <label for="direccion-input">Direccion:</label>
+      <input
+        id="direccion-input"
+        type="text"
+        placeholder="Ingrese direccion del operador"
+        autocomplete="off"
+        formControlName="direccion"
+      />
+    </div>
+
+    <div class="form-field">
+      <label for="nombre-input">Nombre:</label>
+      <input
+        id="nombre-input"
+        type="text"
+        placeholder="Ingrese nombre del operador"
+        autocomplete="off"
+        formControlName="nombre"
+      />
+    </div>
+
+    <div class="form-field">
+      <label for="facultad-input">Facultad:</label>
+      <input
+        id="facultad-input"
+        type="text"
+        placeholder="Ingrese facultad del operador"
+        autocomplete="off"
+        formControlName="facultad"
+      />
+    </div>
+    <button class="registro-btn" (click)="registrarOperador()">Registrar</button>
+  </form>
+</div>

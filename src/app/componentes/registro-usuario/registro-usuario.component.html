@@ -1,0 +1,29 @@
+<div class="content">
+  <form class="form" [formGroup]="registroUsuarioForm">
+    <h1>Registrar Usuario</h1>
+
+    <div class="form-field">
+      <label for="nombre-input">Nombre:</label>
+      <input
+        id="nombre-input"
+        type="text"
+        placeholder="Ingrese nombre del usuario"
+        autocomplete="off"
+        formControlName="nombre"
+      />
+    </div>
+
+    <div class="form-field">
+      <label for="facultad-input">Facultad:</label>
+      <input
+        id="facultad-input"
+        type="text"
+        placeholder="Ingrese facultad del usuario"
+        autocomplete="off"
+        formControlName="facultad"
+      />
+    </div>
+
+    <button class="registro-btn" (click)="registrarUsuario()">Registrar</button>
+  </form>
+</div>

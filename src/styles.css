@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: rgba(8, 99, 0, 0.836);
+  --secondary: rgba(13, 116, 0, 0.685);
+  --secondary-hover: hsl(113, 81%, 18%);
+}
+
+* {
+  margin: 0;
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  background-color: #E5E5E5;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  flex-grow: 1;
+}
