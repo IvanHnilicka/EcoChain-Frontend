@@ -9,6 +9,7 @@
         type="text"
         placeholder="Ingrese direccion del usuario"
         autocomplete="off"
+        [(ngModel)]="direccion"
       />      
 
       <div class="form-field">
@@ -18,10 +19,12 @@
           type="number"
           placeholder="Puntos a canjear"
           autocomplete="off"
+          [(ngModel)]="puntos"
         />
       </div>
     </div>
 
-    <button class="registro-btn">Canjear</button>
+    <button class="registro-btn" (click)="canjear()">Canjear</button>
+    <button class="registro-btn" (click)="leerNFC()">Leer NFC</button>
   </div>
 </div>

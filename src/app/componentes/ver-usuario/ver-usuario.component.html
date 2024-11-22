@@ -5,6 +5,7 @@
     <div class="form-field">
       <label for="direccion-input">Direccion:</label>
       <input
+        #direccionInput
         id="direccion-input"
         type="text"
         placeholder="Ingrese direccion del usuario"
@@ -12,7 +13,8 @@
       />
     </div>
 
-    <button class="registro-btn" (click)="cargarDatos()">Buscar</button>
+    <button class="registro-btn" (click)="cargarDatos(direccionInput.value)">Buscar</button>
+    <button class="registro-btn" (click)="leerNFC()">Leer NFC</button>
 
     <div class="datos-container">
       <div class="form-field">

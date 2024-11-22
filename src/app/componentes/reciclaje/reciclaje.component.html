@@ -9,12 +9,13 @@
         type="text"
         placeholder="Ingrese direccion del operador"
         autocomplete="off"
+        [(ngModel)]="direccion"
       />
     </div>
 
     <div class="form-field">
       <label for="nombre-input">Material:</label>
-      <select name="material-input" id="material-input">
+      <select name="material-input" id="material-input" [(ngModel)]="material">
         <option value="" disabled selected>Escoja una opcion</option>
         <option value="1">Cobre</option>
         <option value="2">Aluminio</option>
@@ -35,8 +36,10 @@
         type="number"
         placeholder="Ingrese la cantidad reciclada en kilogramos"
         autocomplete="off"
+        [(ngModel)]="cantidad"
       />
     </div>
-    <button class="registro-btn">Registrar</button>
+    <button class="registro-btn" (click)="reciclar()">Reciclar</button>
+    <button class="registro-btn" (click)="leerNFC()">Leer NFC</button>
   </div>
 </div>
